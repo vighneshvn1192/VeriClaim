@@ -301,7 +301,7 @@ if page == "🏠 Investigator Queue":
         elif val < 70: return "background-color: #FEF9E7; color: #B7770D; font-weight:600"
         else:          return "background-color: #FADBD8; color: #922B21; font-weight:600"
 
-    styled = queue_table.style.applymap(colour_score, subset=["Risk Score"])
+    styled = queue_table.style.map(colour_score, subset=["Risk Score"])
     st.dataframe(styled, use_container_width=True, height=480)
 
     st.caption(f"Showing {len(queue_table)} providers · Click 'Claim Deep Dive' in the sidebar to analyse any provider")
@@ -549,7 +549,7 @@ elif page == "📁 Batch Upload":
             elif val == "Soft Review":     return "background-color:#FEF9E7; color:#B7770D"
             else:                          return "background-color:#FADBD8; color:#922B21"
 
-        styled_res = results.style.applymap(colour_routing, subset=["Routing"])
+        styled_res = results.style.map(colour_routing, subset=["Routing"])
         st.dataframe(styled_res, use_container_width=True, height=420)
 
         # Download
@@ -640,7 +640,7 @@ elif page == "📊 Management Dashboard":
         "Fraud Label":      high_risk["PotentialFraud"].map({1:"⚠️ Fraud", 0:"✅ Genuine"}),
     })
     st.dataframe(
-        hr_display.style.applymap(
+        hr_display.style.map(
             lambda v: "background-color:#FADBD8;color:#922B21;font-weight:600",
             subset=["Risk Score"]
         ),
