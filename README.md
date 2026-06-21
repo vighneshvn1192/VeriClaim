@@ -17,6 +17,14 @@ VeriClaim is a B2B SaaS engine that scores every health insurance claim for Frau
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vericlaim.streamlit.app)
 
+<img width="982" height="524" alt="image" src="https://github.com/user-attachments/assets/bb3fc4d8-7b8d-4f83-8a1a-552c7626a051" />
+
+<img width="872" height="522" alt="image" src="https://github.com/user-attachments/assets/f808f35f-122a-46f2-8772-e0e2bcd68675" />
+
+<img width="959" height="490" alt="image" src="https://github.com/user-attachments/assets/8bea93cb-7a85-4579-8a9b-7d5db243ae99" />
+
+<img width="901" height="544" alt="image" src="https://github.com/user-attachments/assets/3c640759-016b-437d-a039-cfcf777b4f03" />
+
 ---
 
 ## The Problem
