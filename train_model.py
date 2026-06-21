@@ -162,7 +162,6 @@ model = XGBClassifier(
     max_depth=6,
     learning_rate=0.05,
     scale_pos_weight=(y_train==0).sum() / max((y_train==1).sum(), 1),
-    use_label_encoder=False,
     eval_metric="logloss",
     random_state=42,
     n_jobs=-1,
