@@ -76,6 +76,28 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# ── AI DISCLAIMER — shown on every page load ───────────────────────
+st.markdown("""
+<div style="
+  background: #FEF9E7;
+  border: 1px solid #F39C12;
+  border-left: 4px solid #F39C12;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: #7D6608;
+  line-height: 1.6;
+">
+  <b>⚠️ AI Disclaimer — Please Read</b><br>
+  VeriClaim uses AI to assist fraud detection and is trained on US Medicare public data (not Indian claims data).
+  Scores and recommendations are for <b>investigator guidance only</b> — they are not final decisions.
+  <b>AI can and does make mistakes.</b> Every adverse action (delay, rejection, escalation) must be reviewed
+  and approved by a human investigator. Do not use this tool as the sole basis for any claim decision.
+  Production deployment on Indian claims requires client-data retraining. All demo metrics are illustrative.
+</div>
+""", unsafe_allow_html=True)
+
 # ── LOAD MODEL ────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
@@ -435,6 +457,15 @@ elif page == "🔍 Claim Deep Dive":
             st.warning(f"SHAP explanation not available: {e}")
 
         st.divider()
+
+        # ── AI DECISION REMINDER ──────────────────────────────────
+        st.markdown("""
+<div style="background:#F8F9FA; border:1px solid #DEE2E6; border-radius:6px; padding:10px 14px; font-size:12px; color:#6C757D; margin-bottom:8px;">
+  🤖 <b>AI assistance only.</b> This score is a recommendation, not a verdict.
+  The model was trained on US Medicare data and may not reflect Indian billing patterns.
+  All decisions — approve, escalate, or reject — must be made by a human investigator.
+</div>
+""", unsafe_allow_html=True)
 
         # ── INVESTIGATOR ACTIONS ──────────────────────────────────
         st.markdown('<p class="section-header">Investigator Actions</p>', unsafe_allow_html=True)
