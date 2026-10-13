@@ -219,22 +219,10 @@ vericlaim/
 
 ---
 
-## Team
-
-**Team 5 — Eduinx AI Product Management Cohort 2025**
-
-| Member | Role |
-|---|---|
-| Vighnesh M V | AI PM — Strategy, GTM, Ethics |
-| Abhishek | AI PM — Data Strategy, Model Selection |
-| Sultan | AI PM — UX Design, Monitoring |
-
----
-
 ## Disclaimer
 
 > MVP metrics are illustrative / simulated for demonstration. The model is trained on US Medicare public data (Kaggle) and proves the method only. Production accuracy for Indian claims requires client-data retraining (Stage 2). This is not a production-ready fraud detection system.
 
 ---
 
-*VeriClaim — Team 5 — Eduinx AIPM Capstone — June 2026*
+*VeriClaim — June 2026*
